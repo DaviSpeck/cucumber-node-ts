@@ -1,0 +1,24 @@
+{
+  "name": "cucumber-node-ts",
+  "version": "1.0.0",
+  "description": "Code example, with Node, Cucumber and Typescript. Using BDD (Behavior Driven Development) and TDD (Test Driven Development).",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && cp -R features/*.feature dist/features/",
+    "test:mocha": "npm run build && mocha --extension js dist/test/**/*.test.js",
+    "test:cucumber": "npm run build && cucumber-js \"dist/features/**/*.feature\" --import \"dist/features/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2",
+    "mocha": "^10.8.2",
+    "chai": "^5.1.2",
+    "@cucumber/cucumber": "^11.1.0",
+    "@types/node": "^22.9.1",
+    "@types/mocha": "^10.0.10",
+    "@types/chai": "^5.0.1"
+  }
+}

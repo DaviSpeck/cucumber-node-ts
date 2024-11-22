@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",               // Gera código ESM puro
+        "target": "ES6",                  // Alvo moderno
+        "moduleResolution": "node",       // Resolve módulos como o Node.js
+        "strict": true,                   // Verificação de tipos rigorosa
+        "esModuleInterop": true,          // Interop com CommonJS
+        "skipLibCheck": true,             // Ignora verificações em bibliotecas
+        "outDir": "dist",                 // Saída da compilação
+        "verbatimModuleSyntax": true,     // Preserva imports como estão
+        "rootDir": "./"                   // Define o diretório raiz
+    },
+    "include": ["src/**/*", "test/**/*", "features/**/*"]
+}

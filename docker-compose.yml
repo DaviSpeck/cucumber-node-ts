@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=test
+    volumes:
+      - .:/app
+    command: sh -c "npm run test:build && npm run test:cucumber"
